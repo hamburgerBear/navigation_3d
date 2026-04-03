@@ -8,7 +8,7 @@ if [ -z "${pr_title}" ]; then
   exit 1
 fi
 
-if [[ "${pr_title}" =~ ^(feat|fix|docs|refactor|test|chore)(\([a-z0-9_-]+\))?!?:\ [a-z0-9] ]]; then
+if [[ "${pr_title}" =~ ^(feat|fix|docs|refactor|style|test|chore)(\([a-z0-9_-]+\))?!?:\ [a-z0-9] ]]; then
   exit 0
 fi
 

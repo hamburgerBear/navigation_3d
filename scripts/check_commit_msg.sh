@@ -10,7 +10,7 @@ fi
 
 first_line="$(head -n 1 "${commit_msg_file}")"
 
-if [[ "${first_line}" =~ ^(feat|fix|docs|refactor|test|chore)(\([a-z0-9_-]+\))?!?:\ [a-z0-9] ]]; then
+if [[ "${first_line}" =~ ^(feat|fix|docs|refactor|style|test|chore)(\([a-z0-9_-]+\))?!?:\ [a-z0-9] ]]; then
   exit 0
 fi
 

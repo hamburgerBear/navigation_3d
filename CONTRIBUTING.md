@@ -20,6 +20,7 @@ Use Conventional Commits:
 - `fix:`
 - `docs:`
 - `refactor:`
+- `style:`
 - `test:`
 - `chore:`
 
@@ -27,11 +28,13 @@ Examples:
 
 - `feat: add traversability scoring interface`
 - `fix: handle empty terrain patch in planner`
+- `style: align headers with clang-format`
 
 Commit titles may also use an optional scope:
 
 - `feat(world_model): add terrain query interface`
 - `fix(traversability): guard empty support region`
+- `style(global_planner): normalize include order`
 
 ## Pull Requests
 
