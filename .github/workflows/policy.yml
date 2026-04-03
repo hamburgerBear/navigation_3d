@@ -33,7 +33,8 @@ jobs:
       - name: Check commit messages
         run: |
           if [ "${GITHUB_EVENT_NAME}" = "pull_request" ]; then
-            range="origin/${{ github.base_ref }}..HEAD"
+            git fetch origin "${{ github.base_ref }}"
+            range="origin/${{ github.base_ref }}..${{ github.event.pull_request.head.sha }}"
           else
             before="${{ github.event.before }}"
             if [ "${before}" = "0000000000000000000000000000000000000000" ]; then
