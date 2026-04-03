@@ -8,4 +8,4 @@ namespace navigation_3d::world_model
     double y{0.0};
     double z{0.0};
   };
-}  // namespace navigation_3d::world_model
+} // namespace navigation_3d::world_model

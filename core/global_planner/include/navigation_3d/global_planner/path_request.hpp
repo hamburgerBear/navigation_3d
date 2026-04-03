@@ -11,4 +11,4 @@ namespace navigation_3d::global_planner
     double goal_y{0.0};
     double goal_z{0.0};
   };
-}  // namespace navigation_3d::global_planner
+} // namespace navigation_3d::global_planner

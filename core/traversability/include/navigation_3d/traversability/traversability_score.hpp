@@ -8,4 +8,4 @@ namespace navigation_3d::traversability
     double terrain_cost{0.0};
     double stability_margin{0.0};
   };
-}  // namespace navigation_3d::traversability
+} // namespace navigation_3d::traversability

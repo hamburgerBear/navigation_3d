@@ -12,9 +12,9 @@ int main()
   navigation_3d::global_planner::PathRequest request{};
   navigation_3d::local_planner::LocalPlanWindow window{};
 
-  const bool smoke_test_passed =
-    query.x == 0.0 && robot.max_step_height == 0.0 && score.feasibility == 0.0 &&
-    request.goal_x == 0.0 && window.horizon_seconds == 0.0;
+  const bool smoke_test_passed = query.x == 0.0 && robot.max_step_height == 0.0 &&
+                                 score.feasibility == 0.0 && request.goal_x == 0.0 &&
+                                 window.horizon_seconds == 0.0;
 
   return smoke_test_passed ? 0 : 1;
 }

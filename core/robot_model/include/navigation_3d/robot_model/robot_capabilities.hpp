@@ -9,4 +9,4 @@ namespace navigation_3d::robot_model
     double min_passage_width{0.0};
     double body_clearance{0.0};
   };
-}  // namespace navigation_3d::robot_model
+} // namespace navigation_3d::robot_model
