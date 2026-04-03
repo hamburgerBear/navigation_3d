@@ -28,12 +28,28 @@ Examples:
 - `feat: add traversability scoring interface`
 - `fix: handle empty terrain patch in planner`
 
+Commit titles may also use an optional scope:
+
+- `feat(world_model): add terrain query interface`
+- `fix(traversability): guard empty support region`
+
 ## Pull Requests
 
 - Keep pull requests focused.
 - Describe the motivation, technical approach, and validation.
 - Link to related plan or spec documents when the change affects architecture.
 - Avoid mixing refactors with feature delivery unless required.
+- Use a Conventional Commits style PR title such as `feat: ...`, `fix: ...`, or `docs: ...`.
+- Target `develop` for normal development work.
+- Prefer `Squash and merge` so `develop` keeps a clean history.
+- Delete merged topic branches after the PR lands.
+
+Recommended PR description structure:
+
+- `Summary`
+- `Scope`
+- `Validation`
+- `Follow-up`
 
 ## Validation
 
@@ -43,3 +59,19 @@ Before opening a pull request, run the smallest relevant checks available for th
 - static checks
 - build
 - tests
+
+For architecture or workflow changes, also update the related docs:
+
+- `docs/superpowers/specs/`
+- `AGENTS.md`
+- `README.md`
+
+## Automated Checks
+
+The repository runs policy checks in GitHub Actions for:
+
+- branch naming
+- commit message format
+- pull request title format
+
+The same checks live in `scripts/` so they can also be reused locally later.

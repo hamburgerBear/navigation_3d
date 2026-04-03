@@ -35,3 +35,10 @@ This repository is for building `navigation_3d` using a lightweight planning-fir
 - Run the smallest useful validation for each change.
 - If validation cannot run, state that clearly in the final report.
 - Avoid changing unrelated files during setup work.
+
+## Pull Request Rules
+
+- Follow the PR rules defined in `CONTRIBUTING.md`.
+- Use Conventional Commits style PR titles.
+- Target `develop` unless the user explicitly asks for another base branch.
+- When a change affects architecture, workflow, or developer setup, update the relevant docs in the same branch.
